@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+/* 全体のCSS---------------------------------------- */
+
+ *, *::before, *::after  {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  color: #333;
+  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+* a:hover {
+  opacity: 0.3;
+}
+
+* {
+  transition: all 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* ヘッダー---------------------------------------- */
+
+.header {
+  padding: 20px 0;
+  background: #fff;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  width: 192px;
+  height: 81px;
+  background-image: url("../images/locabonavi_logo3.png");
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  background-image: url("../images/up_btn.png");
+  background-size: cover;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  position: absolute;
+  top: 38%;
+  right: 0%;
+}
+
+.global-nav {
+  background-color: #77C1C6;
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #fff;
+}
+
+.global-nav .nav-list {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.global-nav .nav-list .nav-item {
+  display: inline-block;
+  width: 16.6%;
+  text-align: center;
+  border-left: 1px solid #fff;
+}
+
+.global-nav .nav-list .nav-item:last-of-type {
+  border-right: 1px solid #fff;
+}
+
+.global-nav .nav-list .nav-item a {
+  background-color: #77C1C6;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 35px 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+
+/* メイン---------------------------------------- */
+
+/* トップ画像 */
+.main {
+  display: block;
+  background-color: #F6FAFB;
+  /* text-align: center; */
+
+}
+
+.main > .image {
+  width: 100%;
+  height: auto;
+}
+
+/* ニュース */
+.news-logo {
+  padding: 55px 0;
+  text-align: center;
+}
+
+.news-logo .image {
+  width: 73px;
+  height: 73px;
+}
+
+.news-logo .title {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #3AB1B7;
+  font-weight: bold;
+}
+
+.news-list {
+  width: 837px;
+  /* max-height: 645px; */
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.news-item {
+  margin-bottom: 15px;
+}
+
+.news-item a {
+  display: inline-block;
+  width: 87%;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #eee;
+  color: #666;
+  transition: 0.15s;
+}
+
+.news-item .category {
+  display: inline-block;
+  width: 11%;
+  padding: 3px 0;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.news-item .date {
+  display: inline-block;
+  width: 12%;
+  /* padding-left: 12px; */
+}
+
+.news-item .dot {
+  display: inline-block;
+  width: 1%;
+}
+
+.news-item .title {
+  display: inline-block;
+  width: 85%;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip; */
+}
+
+/* カテゴリ名ごとの設定 */
+
+.news-item .restaurant {
+  background-color: #3AB1B7;
+}
+.news-item .restaurant:before {
+  content: "レストラン";
+}
+
+.news-item .product {
+  background-color: #A40B5D;
+}
+.news-item .product:before {
+  content: "商品";
+}
+
+.news-item .life {
+  background-color: #8FC31F;
+}
+.news-item .life:before {
+  content: "生活";
+}
+
+.news-item .navi {
+  background-color: #FF0000;
+}
+.news-item .navi:before {
+  content: "ロカボナビ";
+}
+
+.news-item .ossan {
+  background-color: #FF69B4;
+}
+.news-item .ossan:before {
+  content: "おっさん";
+}
+.news-item .introduce {
+  background-color: #036EB8;
+}
+.news-item .introduce:before {
+  content: "紹介";
+}
+
+.news-item .ivent {
+  background-color: #F8B62D;
+}
+.news-item .ivent:before {
+  content: "イベント";
+}
+
+
+/* ページネーション */
+.page-nation {
+  padding: 72px 0 80px;
+  text-align: center;
+
+}
+
+.nation-item {
+  display: inline-block;
+}
+
+.nation-item a {
+  display: inline-block;
+  padding: 7px 9px;
+  margin: 0 3px;
+  border-radius: 4px;
+  background-color: #40B2B8;
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0.3;
+  transition: 0.15s;
+}
+
+.nation-item a:hover {
+  opacity: 0.7;
+}
+
+.nation-item.none a {
+  opacity: 1.0;
+  background-color: #bbb;
+  pointer-events: none;
+}
+
+.nation-item.active a {
+  opacity: 1.0;
+  pointer-events: none;
+}
+
+/* バナー */
+.banner {
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner a {
+  width: 31.8%;
+
+}
+
+.banner .image {
+  width: 100%;
+
+}
+
+/* フッターナビ */
+.footer-nav {
+  margin: 50px 0 35px;
+  text-align: center;
+}
+
+.footer-nav .nav-item {
+  display: inline-block;
+}
+
+.footer-nav .nav-item a {
+  display: inline-block;
+  padding: 5px 18px;
+  font-size: 1.2rem;
+  color: #aaa;
+  transition: 0.15s;
+}
+
+.footer-nav .nav-item:not(:last-of-type) a {
+  border-right: 1px solid #eee;
+}
+
+.footer-nav .nav-item a:hover {
+  opacity: 0.6;
+}
+
+/* フッター */
+.footer {
+  background-color: #77C1C6;
+  padding: 30px 0 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 2.4;
+
+}
+
+.footer .title {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.footer .desc {
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+
+}
+
+.footer .copyright {
+  font-size: 1.0rem;
+  letter-spacing: 2px;
+}

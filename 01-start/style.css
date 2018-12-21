@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.cf{display: inline-block;}
+
+/* Hides from IE Mac \*/
+* html .cf {height: 1%;}
+.cf{display:block;}
+/* End Hack */
+
+
+
+
+
+
+/* CSS ここから */
+
+body {
+	font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", メイリオ, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+}
+.menu_bar {
+	width: 100%;
+	height: 50px;
+	background-color: skyblue;
+	color: #fff;
+}
+
+header {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+
+#logo {
+	float: left;
+	width: 213px;
+	height: 39px;
+}
+
+header nav {
+	float: right;
+	margin-top: 25px;
+}
+
+
+.header-nav li {
+	float: left;
+	margin-left: 20px;
+}
+
+.header-nav li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #555555;
+	font-weight: 900;
+}
+
+#mainimage {
+	width: 100%;
+	max-width: 960px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#mainimage img {
+	width: 100%;
+	min-width: 600px;
+}
+
+
+#about {
+	width: 100%;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#about h2 {
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+#about p {
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+
+#container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+#service {
+	width: 100%;
+	max-width: 960px;
+	margin: 45px auto;
+}
+
+#service li {
+	float: left;
+	margin-right: 1.56%;
+	width: 32.2%;
+	/* 310px / 全体の横幅 * 100 */
+}
+
+
+
+
+#service li img {
+	width: 100%;
+}
+
+
+#service li:last-child {
+	margin-right: 0;
+}
+
+#service li a {
+	text-decoration: none;
+	color: #555555;
+	display: block;
+}
+#service li a:hover {
+	opacity: 0.7;
+}
+#service .title {
+	font-size: 20px;
+	font-weight: 900;
+	margin: 10px 0;
+	text-align: center;
+}
+#service .text {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.8;
+}
+
+#content-bottom {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+#news {
+	float: right;
+	width: 66.3265306122449%;
+}
+
+#news h2 {
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+#news-list {
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+#news-list li {
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+#news-list li:last-child {
+	margin-bottom: 0;
+}
+#news-list li a {
+	color: #a8a8a8;
+	text-decoration: none;
+}
+#news-list li:hover {
+	opacity: 0.7;
+}
+.news-title {
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 10px;
+	color: #555555;
+}
+
+#sidebar {
+	width: 28.571428571428557%;
+	float: left;
+}
+#sidebar ul li {
+	border: 1px solid #63abd4;
+	background-color: #f5fbff;
+	margin-bottom: 15px;
+}
+#sidebar ul li:hover {
+	opacity: 0.7;
+}
+#sidebar ul li a {
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	color: #555555;
+	padding: 15px 0 15px 50px;
+	font-weight: 900;
+}
+#side-tel a {
+	background: url(images/icon_tel.png) no-repeat 15px center;
+}
+#side-blog a {
+	background: url(images/icon_blog.png) no-repeat 15px center;
+}
+#side-voice a {
+	background: url(images/icon_voice.png) no-repeat 15px center;
+}
+
+
+
+footer {
+	background-color: #63abd4;
+	margin-top: 45px;
+	padding-top: 30px;
+}
+
+#footer-wrap {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#footer-logo {
+	float: left;
+}
+#footer-nav {
+	float: right;
+	margin-top: 25px;
+}
+#footer-nav li {
+	float: left;
+	margin-left: 15px;
+}
+#footer-nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 900;
+}
+#footer-nav li a:hover {
+	text-decoration: underline;
+}
+
+#copy {
+	text-align: center;
+	font-size: 12px;
+	color: #ccc;
+	background-color: #15232a;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 960px) {
+	div#mainimage {
+		width: 100%;
+		height: 180px;
+		overflow: hidden;
+	}
+	#logo {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+
+}
+@media screen and (max-width: 460px) {
+	#service li {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 30px;
+		width: 100%;
+		/* 310px / 全体の横幅 * 100 */
+	}
+
+	#content-bottom {
+		width: 100%;
+		max-width: 980px;
+		margin: 0 auto;
+	}
+
+	#news {
+		float: none;
+		margin-bottom: 30px;
+		width: 100%;
+
+	}
+
+	#sidebar {
+		float:none;
+		width: 100%;
+	}
+
+	#footer-logo {
+		text-align: center;
+		float: none;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #4d8aad;
+	}
+
+	#footer-nav {
+		text-align: center;
+		float: none;
+		width: 100%;
+		margin-top: 0;
+	}
+	#footer-nav li {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		height: 47px;
+		line-height: 47px;
+		border-bottom: 1px solid #4d8aad;
+	}
+
+}
